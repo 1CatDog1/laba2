@@ -1,0 +1,35 @@
+#include <iostream> 
+using namespace std;
+int main()
+{
+    setlocale(0, "");
+    char station;
+    cout << "Введите станцию (A,B,C,D,E): ";
+    cin >> station;
+    switch (station)
+    {
+    case 'a':
+    case 'A':
+        cout << "До этой станиции ехать 15 минут!";
+        break;
+    case 'b':
+    case 'B':
+        cout << "До этой станции ехать 25 минут!";
+        break;
+    case 'c':
+    case 'C':
+        cout << "До этой станции ехать 35 минут!";
+        break;
+    case 'd':
+    case 'D':
+        cout << "До этой станции ехать 45 минут!";
+        break;
+    case 'e':
+    case 'E':
+        cout << "До этой станции ехать 55 минут!";
+        break;
+    default:
+        cout << "Такой ствнции нет!";
+        break;
+    }
+}

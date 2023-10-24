@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    setlocale(0,"");
+    int a;
+    int b;
+    cout << "Ведите первое число:"<<"\n";
+    cin >> a;
+    cout << "Ведите второе число:" << "\n";
+    cin >> b;
+    int size;
+    cout << "Ведите результат умножения:" << "\n";
+    cin >> size;
+    if (size == a * b) {
+        cout << "Молодец, всё верно!";
+    }
+    else {
+        cout << "Всё не верно! "<< a*b << " - это верный ответ!";
+    }
+    return 0;
+}
+

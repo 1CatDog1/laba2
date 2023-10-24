@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    ;
+    setlocale(0,"");
+    double midage=0;
+    int hightage=0;
+    int lowage=999;
+    int a;
+    int b;
+    cout << "Введите кол-во посетителей за день:" << "\n";
+    cin >> a;
+    for (int i = 1; i <= a; i++) {
+        cout << "Введите возраст "<< i << " посетителя:" << "\n";
+        cin >> b;
+        midage = b+midage;
+        if (b > hightage) {
+            hightage = b;
+        } if (b < lowage) {
+            lowage = b;
+        }
+    }
+    midage = midage / a;
+    cout << "Cредний возраст всех посетителей за день:" << midage<<"\n";
+    cout << "Самый старый посетитель за день:" << hightage << "\n";
+    cout << "Cамый молодой всех посетитель за день:" << lowage << "\n";
+    return 0;
+}
+

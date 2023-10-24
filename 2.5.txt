@@ -1,0 +1,31 @@
+#include <iostream> 
+using namespace std;
+int main()
+{
+    setlocale(0, "");
+    int finger;
+    cout << "Введите номер пальца (Счет начинается с большого пальца): ";
+    cin >> finger;
+    switch (finger)
+    {
+    case 1:
+        cout << "Это большой палец";
+        break;
+    case 2:
+        cout << "Это указательный палец";
+        break;
+    case 3:
+        cout << "Это средний палец";
+        break;
+    case 4:
+        cout << "Это безимянный палец";
+        break;
+    case 5:
+        cout << "Это мизинец палец";
+        break;
+    default:
+        cout << "НЕ ВЕРНОЕ ЗНАЧЕНИЕ ";
+        break;
+    }
+
+}
